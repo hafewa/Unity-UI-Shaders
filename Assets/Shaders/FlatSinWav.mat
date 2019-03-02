@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WavySlider
-  m_Shader: {fileID: 4800000, guid: 45ebc8ca655099248874a29348808189, type: 3}
+  m_Name: FlatSinWav
+  m_Shader: {fileID: 4800000, guid: f02da4c5c41098c4cbbaed6295e1cb5a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,6 +39,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ForegroundMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 10, y: -1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -56,12 +60,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amplitude: 50
+    - _BackgroundCutoff: 0.853
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Frequency: 41.5
+    - _ForegroundCutoff: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -69,16 +73,13 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Period: 10.8
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TotalNodes: 27.3
     - _UVSec: 0
-    - _WobbleAmplitude: 51.2
-    - _WobblePeriod: 6.2
-    - _WobblesPerSecond: 2.82
     - _ZWrite: 1
     m_Colors:
+    - _BackgroundColor: {r: 0.7075472, g: 0.46895912, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ForegroundColor: {r: 1, g: 0, b: 0, a: 1}
